@@ -1,0 +1,50 @@
+.Sidebar {
+    width: 280px;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    padding: 50px;
+    transition: all 0.5s;
+    z-index: 200;
+}
+
+.hide {
+    transition: all 0.5s;
+}
+
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 150;
+}
+
+.SidebarItem {
+    display: inline;
+    padding-left: 20px;
+}
+.menu-btn{
+    padding: 80px 0px 0px 20px;
+    display: flex;
+    justify-content: start;
+}
+.menu-btn span{
+    font-size: 18px;
+}
+@media screen and (max-width:1020px) {
+    .Sidebar {
+        left: -280px;
+        transition: all 0.5s;
+
+    }
+
+
+
+
+}
